@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="313dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtInput" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="97dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#CDDC39"
+        android:text="Reset"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuggest" />
+
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="216dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="98dp"
+        android:background="#B110CC"
+        android:backgroundTint="#2196F3"
+        android:backgroundTintMode="add"
+        android:text="Get Suggestion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult2" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="298dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc" />
+
+    <TextView
+        android:id="@+id/txtResult2"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:text="Enter time of day(morning, afternoon, Night, Dinner) "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
